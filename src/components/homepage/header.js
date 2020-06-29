@@ -5,6 +5,11 @@ import Img from "../../static/img";
 
 const Wrapper = styled.div`
   background: #fff;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  border-bottom: 1px solid #eee;
+  z-index: 99;
 `;
 
 const Container = styled.div`

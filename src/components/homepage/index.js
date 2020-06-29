@@ -6,7 +6,6 @@ import { DateRangePicker } from "react-date-range";
 
 const Wrapper = styled.div`
   width: 100%;
-  padding: 10px;
   height: 1020px;
   background: #eee;
   @media only screen and (max-width: 992px) {
@@ -37,6 +36,21 @@ const RightContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+`;
+
+const Title = styled.div`
+  display: flex;
+  width: 100%;
+  margin-top: 70px;
+  background: #fff;
+  justify-content: center;
+  align-items: center;
+  > p {
+    font-size: 28px;
+    color: #000;
+    font-weight: bolder;
+    margin-bottom: 0px;
+  }
 `;
 
 const EventData = [
@@ -90,6 +104,9 @@ class HomePage extends Component {
       <>
         <Header />
         <Wrapper>
+          <Title>
+            <p>Event List:</p>
+          </Title>
           {EventData.map((item, index) => (
             <MainContainer>
               <LeftContainer>

@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import { Progress } from "antd";
-import queryString from "query-string";
 
 const Wrapper = styled.div`
   height: 190px;
@@ -60,48 +58,6 @@ const EndDate = styled.div`
     > span {
       font-size: 16px;
     }
-  }
-`;
-
-const ProgressContainer = styled.div`
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-`;
-
-const ProgressData = styled.div`
-  width: 140px;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-`;
-
-const ProgressTitle = styled.div`
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 40%;
-  > p {
-    font-size: 14px;
-    text-align: center;
-    margin-bottom: 0px;
-  }
-`;
-const Title = styled.div`
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  > p {
-    font-size: 18px;
-    font-weight: bolder;
-    margin-bottom: 0px;
-    color: rgba(0, 0, 0, 0.3);
   }
 `;
 
